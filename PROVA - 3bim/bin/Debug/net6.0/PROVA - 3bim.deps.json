@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PROVA - 3bim/1.0.0": {
+        "runtime": {
+          "PROVA - 3bim.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PROVA - 3bim/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
