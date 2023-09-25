@@ -27,10 +27,5 @@ namespace PROVA___3bim.classes
             Salario = salario;
         }
 
-        public virtual void CalculoSalario()
-        {
-            Salario = Salario;
-        }
-        
     }
 }

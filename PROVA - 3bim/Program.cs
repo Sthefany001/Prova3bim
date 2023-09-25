@@ -43,6 +43,7 @@ public class Program
             else if(opcao == 2)
             {
                 Medico m = new Medico();
+                Console.Write("\nDigite o nome do médico: ");
                 m.Nome = Console.ReadLine();
                 Console.Write("Digite o CPF do médico: ");
                 m.Cpf = Console.ReadLine();
@@ -60,6 +61,8 @@ public class Program
                 m.ValorHoraExtra = Convert.ToDouble(Console.ReadLine());
                 Console.Write("Digite a especialidade do médico: ");
                 m.Especialidade = Console.ReadLine();
+
+                m.CalculoSalarioMed();
 
                 listaMed.Add(m);
 
@@ -82,32 +85,34 @@ public class Program
                 Console.Write("Digite a função do funcionário administrativo: ");
                 adm.Funcao = Console.ReadLine();
 
+                adm.CalculoSalarioAdm();
+
                 listaAdm.Add(adm);
 
             }
             else if(opcao == 0)
             {
-                Console.WriteLine("Obrigada por usar meu programa! XD");      
+                Console.WriteLine("\nObrigada por usar meu programa! XD");      
             }
             else
             {
-                Console.WriteLine("Opção inválida!");
+                Console.WriteLine("\nOpção inválida!");
             }
         }
 
-        Console.WriteLine("Lista de Funcionários: ");
+        Console.WriteLine("\nLista de Funcionários: ");
         foreach (Funcionario fun in listaFun)
         {
             Console.WriteLine(fun);
         }
 
-        Console.WriteLine("Lista de Médicos: ");
+        Console.WriteLine("\nLista de Médicos: ");
         foreach (Medico med in listaMed)
         {
             Console.WriteLine(med);
         }
 
-        Console.WriteLine("Lista de Funcionários Administrativos: ");
+        Console.WriteLine("\nLista de Funcionários Administrativos: ");
         foreach (Administrativo adm in listaAdm)
         {
             Console.WriteLine(adm);

@@ -21,11 +21,11 @@ namespace PROVA___3bim.classes
             Especialidade = especialidade;
         }
 
-        public override void CalculoSalario()
+        public void CalculoSalarioMed()
         {
             double valorAuxilio = (Salario * 20) / 100;
             
-            Salario = Salario + valorAuxilio + valorAuxilio;
+            Salario = Salario + valorAuxilio + ValorHoraExtra;
             Console.WriteLine($"Valor do salário com todos os acréscimos: {Salario}");
         }
 

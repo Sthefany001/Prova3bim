@@ -17,7 +17,7 @@ namespace PROVA___3bim.classes
             Funcao = funcao;
         }
 
-        public override void CalculoSalario()
+        public void CalculoSalarioAdm()
         {
             double valeTransporte = 150;
             double valeAlimento = (Salario * 15) / 100;
